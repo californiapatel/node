@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+</head>
+<body style="background-color: #FAF7F0; display: flex; justify-content: center;align-items: center; flex-direction: column; height: 700px;">
+    <h1 style="color: #B17457; font-size: 50px;">Edit Task</h1>
+    <form action="/edit/<%= taskToEdit.id %>" method="POST" style="background-color: #4A4947; width: 400px; text-align: center; border-radius: 45px;">
+        <input type="text" name="task" value="<%= taskToEdit.task %>" style="height: 40px; width: 300px; margin-top: 20px;border-radius: 25px; text-align: center; border: none;">
+        <button type="submit" style="margin-bottom: 20px; height: 40px; width: 150px; border: none; border-radius: 25px; background-color: #4A4947; color: white; margin-top: 20px; background-color: #B17457;">Update Task</button>
+    </form>
+</body>
+</html>
